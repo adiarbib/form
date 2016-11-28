@@ -1,0 +1,38 @@
+<html>
+
+<head>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script>
+
+        function validateForm()
+        {
+            var form=document.forms["signUp"];
+            var username = form["username"].value;
+            var password=form["password"].value;
+            var phoneNumber=form["phoneNumber"].value;
+            var checkedValue = document.querySelector('.messageCheckbox:checked').value;
+            
+        }
+        </script>
+
+</head>
+
+<body>
+	<form id="signUp">
+		<input type="text" id="username" placeholder="enter username" <br>
+		<input type="password" id="password" placeholder="enter password" <br>
+		<input type="password" id="secondPassword" placeholder="re-enter your password" <br>
+		<input type="tel" id="phoneNumber" placeholder="enter phone number" <br>
+		<input type="date" id="birthDate" min="1970-01-01" max="2007-01-01"<br>
+		<input type="email" id="email" placeholder="enter mail" <br>
+        <input type="checkbox" name="confirmTerms" value="CheckBox" checked> I confirm the terms <br>
+		<input type="submit" id="submit" onclick="validateForm()" value="Submit">
+		<input type="reset">
+	</form>
+</body>
+
+</html>
